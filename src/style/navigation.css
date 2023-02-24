@@ -1,0 +1,19 @@
+#nav-main-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcyan;
+    height: 300px;
+}
+
+.nav-container {
+    padding: 40px;
+}
+
+#nav-items-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 10px;
+}

@@ -1,8 +1,8 @@
 const About= () => {
     return (
-        <div>
-            about me placeholder
-        </div>
+        <p>
+            I am a Front-End Developer based out of Nashville, TN. With a passion for detail and design I am always looking for new projects to apply my skills. In my free time you can find me mixing music or playing Galaga at the local arcade. 
+        </p>
     )
 }
 

@@ -1,4 +1,6 @@
 import './style/app.css'
+import './style/navigation.css';
+import './style/about.css'
 import './components/navigation'
 import Navigation from './components/navigation';
 import About from './components/about'

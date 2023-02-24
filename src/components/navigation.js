@@ -1,14 +1,16 @@
+
+
 const Navigation = () => {
     return (
-        <div>
-            <div id='profile-container'>
+        <div id='nav-main-container'>
+            <div id='profile-container' className='nav-container'>
                 <div>image container</div>
                 <h3 id='name'>Cole Gibson</h3>
             </div>
-            <div id='nav-items-container'>
-                <div class='nav-iem'>About Me</div>
-                <div class='nav-item'>Projects</div>
-                <div class='nav-item'>Contact</div>
+            <div id='nav-items-container' className='nav-container'>
+                <div className='nav-item'>About Me</div>
+                <div className='nav-item'>Projects</div>
+                <div className='nav-item'>Contact</div>
             </div>
         </div>
     )
