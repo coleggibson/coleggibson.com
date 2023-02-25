@@ -5,6 +5,9 @@ import './components/navigation'
 import Navigation from './components/navigation';
 import About from './components/about'
 import Footer from './components/footer'
+import Projects from './components/projects'
+import memorycard from './Memorycard'
+
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
       <body>
       <Navigation/>
       <About/>
+      <Projects/>
       </body>
       <Footer/>
     </div>

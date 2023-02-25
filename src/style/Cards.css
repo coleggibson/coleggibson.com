@@ -1,0 +1,10 @@
+.cardImg {
+    width: 250px;
+    height: 150px;
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
