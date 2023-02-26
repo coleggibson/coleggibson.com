@@ -2,26 +2,21 @@ import './style/app.css'
 import './style/navigation.css';
 import './style/about.css'
 import './components/navigation'
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
 import Navigation from './components/navigation';
-import About from './components/about'
-import Footer from './components/footer'
-import Projects from './components/projects'
-import memorycard from './Memorycard'
-
+import Home from './pages';
+import Memorycard from './pages/memorycard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <body>
-      <Navigation/>
-      <About/>
-      <Projects/>
-      </body>
-      <Footer/>
-    </div>
-  );
+  <Router>
+  <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route path='/memorycard' element={<Memorycard/>} />
+  </Routes>
+  </Router>
+);
 }
 
 export default App;

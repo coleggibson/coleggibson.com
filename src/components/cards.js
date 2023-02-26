@@ -1,4 +1,4 @@
-// import './style/Cards.css';
+import '../style/cards.css';
 import uniqid from "uniqid"
 import React, {useEffect, useState} from "react"
 import {
@@ -11,7 +11,7 @@ import {
     Switch, 
     Xbox, 
     Playstation
-} from '../../src/images'
+} from '../images'
 
 
 
@@ -31,10 +31,6 @@ const Cards = ({currentScore, setCurrentScore, bestScore, setBestScore}) => {
     ]);
 
     const [clickArray, setClickArray] = useState([])
-
-    // let [currentScore, setCurrentScore] = useState(0)
-
-    // let [bestScore, setBestScore] = useState(0)
 
 
     const shuffleCards = (array) => {
@@ -57,11 +53,17 @@ const Cards = ({currentScore, setCurrentScore, bestScore, setBestScore}) => {
         if (duplicateStatus == false) {
             setCurrentScore(currentScore + 1) 
         } else if (duplicateStatus == true){
-            setBestScore(bestScore = currentScore)
+            checkBest(currentScore)
             setCurrentScore(0)
             setClickArray([])
         }
         console.log(id)
+    }
+
+    const checkBest = (currentScore) => {
+        if (currentScore > bestScore)  {
+            setBestScore(bestScore = currentScore)
+        }
     }
 
   

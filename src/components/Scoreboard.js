@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './Cards.js';
+import './cards.js';
 
 const Scoreboard = ({currentScore, bestScore}) => {
     return (<div id='score-items-container'>

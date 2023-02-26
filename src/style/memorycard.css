@@ -1,6 +1,6 @@
-/* body {
+#memorycard-body {
   background-color: rgba(240, 25, 17, 0.76);
-} */
+}
 #header-container{
   display: flex;
   /* justify-content: space-between; */
