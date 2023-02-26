@@ -1,24 +1,50 @@
 import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
+import About from './about'
+import Homes from '../pages'
 
-const Navigation = () => {
+const Navigation = ({aboutSection, projectsSection, contactSection}) => {
+    
 
     const particlesInit = async (main) => {
         console.log(main)
         await loadFull(main)
     }
+    const scrollDown = (ref) => {
+        window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior:'smooth'
+        })
+    }
+
     
     return (
         <div id='nav-main-container'>
             <div id='nav-content-container'>
                 <div id='profile-container' className='nav-container'>
                     <div>image container</div>
-                    <h3 id='name'>Cole Gibson</h3>
+                    <div id='name-container'>
+                        <div class='letter-container'>
+                        <span class='nav-letter'>C</span>
+                        <span class='nav-letter'>o</span>
+                        <span class='nav-letter'>l</span>
+                        <span class='nav-letter'>e</span>
+                    </div>
+                    <div class='letter-container'>
+                        <span class='nav-letter'>G</span>
+                        <span class='nav-letter'>i</span>
+                        <span class='nav-letter'>b</span>
+                        <span class='nav-letter'>s</span>
+                        <span class='nav-letter'>o</span>
+                        <span class='nav-letter'>n</span>
+                    </div>
+                    </div>
+
                 </div>
                 <div id='nav-items-container' className='nav-container'>
-                    <div className='nav-item'>About Me</div>
-                    <div className='nav-item'>Projects</div>
-                    <div className='nav-item'>Contact</div>
+                    <div class='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
+                    <div class='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
+                    <div class='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
                 </div>
             </div>
             <Particles id='particles' init={particlesInit} options={{
@@ -29,7 +55,7 @@ const Navigation = () => {
                 },
                 "particles": {
                     "number": {
-                        "value": 50,
+                        "value": 100,
                         "density": {
                             "enable": false,
                             "value_area": 300
@@ -39,7 +65,7 @@ const Navigation = () => {
                         "value": "random"
                     },
                     "shape": {
-                        "type": "circle",
+                        "type": "square",
                         "options": {
                             "sides": 2
                         }
@@ -55,10 +81,10 @@ const Navigation = () => {
                         }
                     },
                     "size": {
-                        "value": 2.5,
+                        "value": 4,
                         "random": false,
                         "anim": {
-                            "enable": false,
+                            "enable": true,
                             "speed": 10,
                             "size_min": 0.1,
                             "sync": false
@@ -99,11 +125,11 @@ const Navigation = () => {
                     "events": {
                         "onhover": {
                             "enable": true,
-                            "mode": "attract"
+                            "mode": "connect"
                         },
                         "onclick": {
                             "enable": true,
-                            "mode": "bubble"
+                            "mode": "connect"
                         },
                         "resize": true
                     },
@@ -129,6 +155,11 @@ const Navigation = () => {
                         },
                         "remove": {
                             "particles_nb": 2
+                        },
+                        "trail": {
+                            "delay": 0.005,
+                            "quantity": 1,
+                            "pauseOnStop": false
                         }
                     }
                 },

@@ -1,3 +1,10 @@
 body {
+    padding: 0px;
+    margin:0px;
     height: 200px;
+    background-color: #B0C4DE;
+}
+
+.section-header {
+    font-size: 30px;
 }

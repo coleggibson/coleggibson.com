@@ -1,0 +1,24 @@
+#contact-container {
+    height: 200px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.contact-img {
+    height: 40px;
+    width:40px;
+    padding-left:10px
+}
+
+#gmail {
+    height: 30px;
+}

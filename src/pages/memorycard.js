@@ -1,6 +1,6 @@
 import '../style/memorycard.css';
 import Cards from '../components/cards.js'
-import Scoreboard from '../components/Scoreboard.js'
+import Scoreboard from '../components/scoreboard.js'
 import React, {useState} from "react"
 
 function Memorycard() {

@@ -8,6 +8,7 @@ import Navigation from './components/navigation';
 import Home from './pages';
 import Memorycard from './pages/memorycard';
 
+
 function App() {
   return (
   <Router>
