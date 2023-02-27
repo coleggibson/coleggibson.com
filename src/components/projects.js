@@ -16,8 +16,9 @@ const Projects = ({projectsSection}) => {
                 <div class='memory-card-content'> 
                     <img src={Memorycardpic} alt='memorycard-screenshot'/>
                     <div class='project-buttons'>
+                        <button class='button'>View Code</button>
                     <Link to="memorycard">
-                        <button>View Demo</button>
+                        <button class='button'>View Demo</button>
                     </Link>
                     </div>
                 </div>

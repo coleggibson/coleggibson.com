@@ -1,13 +1,13 @@
 p {
     padding: 30px;
     font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #about-content-container {
     background-color:rgba(182, 218, 230, 0.527);
     margin:10px;
     border-radius: 20px;
-    /* border-style: ridge; */
 }
 
 #about-content {

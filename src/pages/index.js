@@ -11,13 +11,15 @@ function Home () {
   const aboutSection = useRef();
   const projectsSection = useRef();
   const contactSection = useRef();
+  const navItems = useRef();
 
     return (
         <div className="App">
           <header className="App-header">
           </header>
           <Navigation aboutSection = {aboutSection}
-          projectsSection = {projectsSection} contactSection={contactSection}/>
+          projectsSection = {projectsSection} contactSection={contactSection}
+          navItems = {navItems}/>
           <body>
           <About aboutSection = {aboutSection}/>
           <Projects projectsSection = {projectsSection}/>

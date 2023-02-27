@@ -1,11 +1,11 @@
 import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
-import About from './about'
-import Homes from '../pages'
+import '../style/navigation.css'
 
-const Navigation = ({aboutSection, projectsSection, contactSection}) => {
+
+const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) => {
     
-
+    
     const particlesInit = async (main) => {
         console.log(main)
         await loadFull(main)
@@ -16,7 +16,17 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
             behavior:'smooth'
         })
     }
+    const shrinkNav = (ref) => {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            ref.current.style.height = "100px";
+            ref.current.style.flexDirection = 'row'
+          } else {
+            ref.current.style.height = "200px";
+            ref.current.style.flexDirection = 'column'
+          }
+    }
 
+    window.onscroll = function() {shrinkNav(navItems)};
     
     return (
         <div id='nav-main-container'>
@@ -41,7 +51,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
                     </div>
 
                 </div>
-                <div id='nav-items-container' className='nav-container'>
+                <div id='nav-items-container' className='nav-container' ref={navItems}>
                     <div class='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
                     <div class='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
                     <div class='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
@@ -92,7 +102,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
                     },
                     "rotate": {
                         "value": 0,
-                        "random": true,
+                        "random": false,
                         "direction": "clockwise",
                         "animation": {
                             "enable": true,
@@ -120,8 +130,11 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
                             "rotateY": 1200
                         }
                     }
+                    
                 },
+                
                 "interactivity": {
+                    'detectsOn': 'canvas',
                     "events": {
                         "onhover": {
                             "enable": true,
@@ -160,7 +173,8 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
                             "delay": 0.005,
                             "quantity": 1,
                             "pauseOnStop": false
-                        }
+                        },
+                        
                     }
                 },
                 "retina_detect": true,
@@ -170,7 +184,21 @@ const Navigation = ({aboutSection, projectsSection, contactSection}) => {
                     "position": "50% 50%",
                     "repeat": "no-repeat",
                     "size": "cover"
-                }
+                },
+                'polygon': {
+                    'draw': {
+                      'enable': true,
+                      'lineColor': "rgba(255,255,255,0.2)",
+                      'lineWidth': 0.3
+                    },
+                    'move': {
+                      'radius': 10
+                    },
+                    'inlineArrangement': "equidistant",
+                    'scale': 0.5,
+                    'type': "inline",
+                    'url': "https://particles.js.org/images/smalldeer.svg"
+                  },
             }}
             />
         </div>
