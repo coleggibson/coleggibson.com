@@ -1,11 +1,15 @@
 import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
 import '../style/navigation.css'
+import {tsParticles} from "tsparticles-engine"
+import {loadPolygonMaskPlugin} from "tsparticles-plugin-polygon-mask"
+
+
 
 
 const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) => {
     
-    
+    loadPolygonMaskPlugin(tsParticles)
     const particlesInit = async (main) => {
         console.log(main)
         await loadFull(main)
@@ -57,6 +61,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                     <div class='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
                 </div>
             </div>
+            
             <Particles id='particles' init={particlesInit} options={{
                  
                  "fullScreen": {
@@ -65,17 +70,17 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                 },
                 "particles": {
                     "number": {
-                        "value": 100,
+                        "value": 200,
                         "density": {
                             "enable": false,
                             "value_area": 300
                         }
                     },
                     "color": {
-                        "value": "random"
+                        "value": "#ffffff"
                     },
                     "shape": {
-                        "type": "square",
+                        "type": "circle",
                         "options": {
                             "sides": 2
                         }
@@ -91,10 +96,10 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                         }
                     },
                     "size": {
-                        "value": 4,
+                        "value": 2,
                         "random": false,
                         "anim": {
-                            "enable": true,
+                            "enable": false,
                             "speed": 10,
                             "size_min": 0.1,
                             "sync": false
@@ -106,7 +111,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                         "direction": "clockwise",
                         "animation": {
                             "enable": true,
-                            "speed": 5,
+                            "speed": 3,
                             "sync": false
                         }
                     },
@@ -119,9 +124,9 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                     },
                     "move": {
                         "enable": true,
-                        "speed": 1,
+                        "speed": .2,
                         "direction": "none",
-                        "random": false,
+                        "random": true,
                         "straight": false,
                         "out_mode": "bounce",
                         "attract": {
@@ -138,7 +143,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                     "events": {
                         "onhover": {
                             "enable": true,
-                            "mode": "connect"
+                            "mode": "bubble"
                         },
                         "onclick": {
                             "enable": true,
@@ -154,11 +159,11 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                             }
                         },
                         "bubble": {
-                            "distance": 400,
-                            "size": 40,
+                            "distance": 50,
+                            "size": 4,
                             "duration": 2,
                             "opacity": 8,
-                            "speed": 3
+                            "speed": 10
                         },
                         "repulse": {
                             "distance": 50
@@ -188,13 +193,16 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                 'polygon': {
                     'draw': {
                       'enable': true,
-                      'lineColor': "rgba(255,255,255,0.2)",
-                      'lineWidth': 0.3
+                      'lineColor': "#f0f8ff",
+                      'lineWidth': 0.7
                     },
                     'move': {
-                      'radius': 10
+                      'radius': 8
                     },
-                    'inlineArrangement': "equidistant",
+                   
+                    'inline': {
+                    'arrangement': "equidistant",
+                    },
                     'scale': 0.5,
                     'type': "inline",
                     'url': "https://particles.js.org/images/smalldeer.svg"

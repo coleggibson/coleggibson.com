@@ -40,6 +40,7 @@
 .nav-item {
     padding: 10px;
     text-decoration-color: transparent;
+    transition: 2s;
 }
 
 .nav-item:hover {

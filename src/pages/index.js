@@ -7,6 +7,7 @@ import Contact from '../components/contact'
 import {useRef} from 'react'
 
 
+
 function Home () {
   const aboutSection = useRef();
   const projectsSection = useRef();
