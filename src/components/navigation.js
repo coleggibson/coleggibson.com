@@ -29,6 +29,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
             ref.current.style.flexDirection = 'column'
           }
     }
+    
 
     window.onscroll = function() {shrinkNav(navItems)};
     

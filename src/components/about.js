@@ -1,11 +1,22 @@
 import React from 'react'
 import '../style/about.css'
-import Home from '../pages'
 
 const About = ({aboutSection}) => {
     
+    const fadeRight = (ref) => {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            ref.current.classList.remove ("after-scroll")
+            ref.current.classList.add("after-scroll")
+          } else {
+            ref.current.classList.remove("after-scroll")
+            ref.current.classList.add("before-scroll")
+          }
+    }
+
+    window.onscroll = function () {fadeRight(aboutSection)}
+
     return (
-        <div id='about-section' ref={aboutSection}>
+        <div id='about-section' className='before-scroll' ref={aboutSection}>
             <div className='section-header'>About</div>
             <div id='about-content-container'>
                 <p id='about-content'>

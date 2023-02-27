@@ -14,6 +14,8 @@ function Home () {
   const contactSection = useRef();
   const navItems = useRef();
 
+  
+
     return (
         <div className="App">
           <header className="App-header">

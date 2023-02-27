@@ -4,10 +4,23 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#about-content-container {
-    background-color:rgba(182, 218, 230, 0.527);
+.before-scroll {
     margin:10px;
     border-radius: 20px;
+    border-style:solid;
+    position: relative;
+    right:70px;
+    filter:blur(2px);
+    transition:right 1s
+}
+
+.after-scroll {
+    margin:10px;
+    border-radius: 20px;
+    border-style:solid;
+    filter:none;
+    right:0;
+    transition:right 1s;
 }
 
 #about-content {
