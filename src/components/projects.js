@@ -9,8 +9,8 @@ const Projects = ({projectsSection}) => {
     
 
     return (
-        <div>
-            <div id='projects-title' ref={projectsSection} className='section-header'>Projects</div>
+        <div ref={projectsSection} className='section-header'>
+            <div id='projects-title' >Projects</div>
             <div id='projects-container'>
                 {/* <div id='slideshow-container'></div> */}
                 <div class='memory-card-content'> 

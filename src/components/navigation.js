@@ -3,6 +3,7 @@ import {loadFull} from 'tsparticles'
 import '../style/navigation.css'
 import {tsParticles} from "tsparticles-engine"
 import {loadPolygonMaskPlugin} from "tsparticles-plugin-polygon-mask"
+import { starry } from '../images'
 
 
 
@@ -29,23 +30,31 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
             ref.current.style.flexDirection = 'column'
           }
     }
-    
+    const fadeRight = (ref) => {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            ref.current.classList.remove ("after-scroll")
+            ref.current.classList.add("after-scroll")
+          } else {
+            ref.current.classList.remove("after-scroll")
+            ref.current.classList.add("before-scroll")
+          }
+    }
 
-    window.onscroll = function() {shrinkNav(navItems)};
+    window.onscroll = function() {shrinkNav(navItems); fadeRight(aboutSection)};
     
     return (
         <div id='nav-main-container'>
-            <div id='nav-content-container'>
-                <div id='profile-container' className='nav-container'>
-                    <div>image container</div>
+            <div id='nav-content-container' className='nav-container'>
                     <div id='name-container'>
+                        <div class='intro'>Hello, I'm</div>
+                        <div id='main-letter-container'>
                         <div class='letter-container'>
                         <span class='nav-letter'>C</span>
                         <span class='nav-letter'>o</span>
                         <span class='nav-letter'>l</span>
                         <span class='nav-letter'>e</span>
                     </div>
-                    <div class='letter-container'>
+                    <div class='letter-container-last'>
                         <span class='nav-letter'>G</span>
                         <span class='nav-letter'>i</span>
                         <span class='nav-letter'>b</span>
@@ -54,13 +63,13 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                         <span class='nav-letter'>n</span>
                     </div>
                     </div>
-
+                    <div class='intro'>Front-End Web Developer</div>
                 </div>
-                <div id='nav-items-container' className='nav-container' ref={navItems}>
+            </div>
+            <div id='nav-items-container' className='nav-container' ref={navItems}>
                     <div class='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
                     <div class='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
                     <div class='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
-                </div>
             </div>
             
             <Particles id='particles' init={particlesInit} options={{
@@ -185,29 +194,30 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                 },
                 "retina_detect": true,
                 "background": {
-                    "color": "#B0C4DE",
-                    "image": "",
+                    "color": "#0A1828",
+                    "image": {
+                        'src': {starry},
+                    },
                     "position": "50% 50%",
                     "repeat": "no-repeat",
                     "size": "cover"
                 },
-                'polygon': {
-                    'draw': {
-                      'enable': true,
-                      'lineColor': "#f0f8ff",
-                      'lineWidth': 0.7
-                    },
-                    'move': {
-                      'radius': 8
-                    },
-                   
-                    'inline': {
-                    'arrangement': "equidistant",
-                    },
-                    'scale': 0.5,
-                    'type': "inline",
-                    'url': "https://particles.js.org/images/smalldeer.svg"
-                  },
+                // 'polygon': {
+                //     'draw': {
+                //       'enable': true,
+                //       'lineColor': "#f0f8ff",
+                //       'lineWidth': 0.3
+                //     },
+                //     'move': {
+                //       'radius': 9
+                //     },
+                //     'inline': {
+                //     'arrangement': "equidistant",
+                //     },
+                //     'scale': 0.5,
+                //     'type': "inline",
+                //     'url': "https://particles.js.org/images/smalldeer.svg"
+                //   },
             }}
             />
         </div>

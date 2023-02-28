@@ -21,10 +21,10 @@ const Contact= ({contactSection}) => {
             <div>linkedin</div>
             <img src={LinkedIn} className='contact-img' alt='linkedin'/>
             </div>
-            <div className='contact-item'>
+            {/* <div className='contact-item'>
             <div>resume</div>
             <div>image</div>
-            </div>
+            </div> */}
             </div>
         </div>
     )

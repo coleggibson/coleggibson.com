@@ -14,7 +14,28 @@ function Home () {
   const contactSection = useRef();
   const navItems = useRef();
 
-  
+  const shrinkNav = (ref) => {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        
+      } else {
+        ref.current.style.height = "200px";
+        ref.current.style.flexDirection = 'column'
+      }
+}
+
+const fadeRight = (ref) => {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      ref.current.classList.remove ("after-scroll")
+      ref.current.classList.add("after-scroll")
+      ref.current.style.height = "100px";
+      ref.current.style.flexDirection = 'row'
+    } else {
+      ref.current.classList.remove("after-scroll")
+      ref.current.classList.add("before-scroll")
+    }
+}
+
+window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems)}
 
     return (
         <div className="App">
@@ -22,7 +43,7 @@ function Home () {
           </header>
           <Navigation aboutSection = {aboutSection}
           projectsSection = {projectsSection} contactSection={contactSection}
-          navItems = {navItems}/>
+          navItems = {navItems} shrinkNav = {shrinkNav}/>
           <body>
           <About aboutSection = {aboutSection}/>
           <Projects projectsSection = {projectsSection}/>

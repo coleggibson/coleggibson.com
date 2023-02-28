@@ -1,13 +1,13 @@
 p {
     padding: 30px;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .before-scroll {
     margin:10px;
     border-radius: 20px;
-    border-style:solid;
+    background-color: #0A1828;
     position: relative;
     right:70px;
     filter:blur(2px);
@@ -17,16 +17,31 @@ p {
 .after-scroll {
     margin:10px;
     border-radius: 20px;
-    border-style:solid;
+    background-color: #0A1828;
     filter:none;
     right:0;
     transition:right 1s;
 }
 
+#about-section {
+    height: 300px;
+    margin: 0px;
+    padding:0;
+}
+
+#about-title{
+    /* background-color: #102741; */
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+
 #about-content {
-    
+    padding-left:80px;
+    padding-right:80px;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 200px;
     align-items: center;
+    font-size: 20px;
 }
