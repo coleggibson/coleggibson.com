@@ -35,7 +35,7 @@ const fadeRight = (ref) => {
     }
 }
 
-window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems)}
+window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems);}
 
     return (
         <div className="App">

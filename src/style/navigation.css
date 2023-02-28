@@ -15,7 +15,7 @@
 #nav-content-container{
     display: flex;
     justify-content: center;
-    /* padding-top: 200px; */
+    padding-bottom: 350px;
     position:absolute;
     color: #f0f8ff;
     /* width: 100%; */
@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-
+    
 }
 
 
