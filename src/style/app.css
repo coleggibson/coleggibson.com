@@ -13,4 +13,24 @@ body {
     font-size: x-large;
     font-weight: 900;
     padding-left: 5px;
+    padding-top: 35px;
+}
+
+.before-scroll {
+    margin:10px;
+    border-radius: 20px;
+    background-color: #0A1828;
+    position: relative;
+    right:70px;
+    filter:blur(2px);
+    transition:right 1s
+}
+
+.after-scroll {
+    margin:10px;
+    border-radius: 20px;
+    background-color: #0A1828;
+    filter:none;
+    right:0;
+    transition:right 1s;
 }

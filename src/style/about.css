@@ -4,24 +4,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.before-scroll {
-    margin:10px;
-    border-radius: 20px;
-    background-color: #0A1828;
-    position: relative;
-    right:70px;
-    filter:blur(2px);
-    transition:right 1s
-}
 
-.after-scroll {
-    margin:10px;
-    border-radius: 20px;
-    background-color: #0A1828;
-    filter:none;
-    right:0;
-    transition:right 1s;
-}
 
 #about-section {
     height: 300px;
@@ -31,7 +14,7 @@ p {
 
 #about-title{
     /* background-color: #102741; */
-    padding-top: 50px;
+    /* padding-top: 50px; */
     border-radius: 10px;
 }
 

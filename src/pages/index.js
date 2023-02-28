@@ -16,7 +16,7 @@ function Home () {
 
   const shrinkNav = (ref) => {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        
+      ref.current.style.flexDirection = 'row'
       } else {
         ref.current.style.height = "200px";
         ref.current.style.flexDirection = 'column'
@@ -27,15 +27,24 @@ const fadeRight = (ref) => {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       ref.current.classList.remove ("after-scroll")
       ref.current.classList.add("after-scroll")
-      ref.current.style.height = "100px";
-      ref.current.style.flexDirection = 'row'
     } else {
       ref.current.classList.remove("after-scroll")
       ref.current.classList.add("before-scroll")
     }
 }
 
-window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems);}
+const fadeRightProj = (ref) => {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      ref.current.classList.remove ("after-scroll")
+      ref.current.classList.add("after-scroll")
+    } else {
+      ref.current.classList.remove("after-scroll")
+      ref.current.classList.add("before-scroll")
+    }
+}
+
+
+window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems); fadeRightProj(projectsSection)}
 
     return (
         <div className="App">

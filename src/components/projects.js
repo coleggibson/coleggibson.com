@@ -9,10 +9,28 @@ const Projects = ({projectsSection}) => {
     
 
     return (
-        <div ref={projectsSection} className='section-header'>
-            <div id='projects-title' >Projects</div>
+        <div id='projects-section' ref={projectsSection} className='before-scroll'>
+            <div id='projects-title' className='section-header' >Projects</div>
             <div id='projects-container'>
                 {/* <div id='slideshow-container'></div> */}
+                <div id='memory-card-content'> 
+                    <img src={Memorycardpic} alt='memorycard-screenshot'/>
+                    <div class='project-buttons'>
+                        <button class='button'>View Code</button>
+                    <Link to="memorycard">
+                        <button class='button'>View Demo</button>
+                    </Link>
+                    </div>
+                </div>
+                <div class='memory-card-content'> 
+                    <img src={Memorycardpic} alt='memorycard-screenshot'/>
+                    <div class='project-buttons'>
+                        <button class='button'>View Code</button>
+                    <Link to="memorycard">
+                        <button class='button'>View Demo</button>
+                    </Link>
+                    </div>
+                </div>
                 <div class='memory-card-content'> 
                     <img src={Memorycardpic} alt='memorycard-screenshot'/>
                     <div class='project-buttons'>

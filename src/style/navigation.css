@@ -7,7 +7,7 @@
 }
 
 .intro {
-    font-size: 90px ;
+    /* font-size: 90px ; */
     color: #BFA181;
     font-weight: 100;
 }
@@ -15,7 +15,7 @@
 #nav-content-container{
     display: flex;
     justify-content: center;
-    padding-bottom: 350px;
+    padding-bottom: 200px;
     position:absolute;
     color: #f0f8ff;
     /* width: 100%; */
@@ -85,12 +85,11 @@
 }
 
 .letter-container {
-    width:200px
+    width:150px
 }
 
 .nav-letter {
     display:inline-block;
-    font-size:90px;
     transition:1s;
     font-weight: 530;
     cursor:default;
@@ -100,7 +99,7 @@
 
 .nav-letter:hover {
     filter: blur(1px);
-    font-size:95px;
+    font-size:75px;
     transition: 1s;
     color:azure;
    
@@ -108,9 +107,11 @@
 
 
 #name-container {
+    font-size: 70px;
     display: flex;
     flex-direction: column;
     justify-items: center;
+    align-items: center;
     
 }
 

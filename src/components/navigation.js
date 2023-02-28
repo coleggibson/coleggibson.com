@@ -21,55 +21,35 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
             behavior:'smooth'
         })
     }
-    const shrinkNav = (ref) => {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            ref.current.style.height = "100px";
-            ref.current.style.flexDirection = 'row'
-          } else {
-            ref.current.style.height = "200px";
-            ref.current.style.flexDirection = 'column'
-          }
-    }
-    const fadeRight = (ref) => {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            ref.current.classList.remove ("after-scroll")
-            ref.current.classList.add("after-scroll")
-          } else {
-            ref.current.classList.remove("after-scroll")
-            ref.current.classList.add("before-scroll")
-          }
-    }
-
-    window.onscroll = function() {shrinkNav(navItems); fadeRight(aboutSection)};
-    
+   
     return (
         <div id='nav-main-container'>
             <div id='nav-content-container' className='nav-container'>
-                    <div id='name-container'>
-                        <div class='intro'>Hello, I'm</div>
-                        <div id='main-letter-container'>
-                        <div class='letter-container'>
-                        <span class='nav-letter'>C</span>
-                        <span class='nav-letter'>o</span>
-                        <span class='nav-letter'>l</span>
-                        <span class='nav-letter'>e</span>
+                <div id='name-container'>
+                    <div className='intro'>Hello, I'm</div>
+                    <div id='main-letter-container'>
+                        <div className='letter-container'>
+                            <span className='nav-letter'>C</span>
+                            <span className='nav-letter'>o</span>
+                            <span className='nav-letter'>l</span>
+                            <span className='nav-letter'>e</span>
+                        </div>
+                        <div className='letter-container-last'>
+                            <span className='nav-letter'>G</span>
+                            <span className='nav-letter'>i</span>
+                            <span className='nav-letter'>b</span>
+                            <span className='nav-letter'>s</span>
+                            <span className='nav-letter'>o</span>
+                            <span className='nav-letter'>n</span>
+                        </div>
                     </div>
-                    <div class='letter-container-last'>
-                        <span class='nav-letter'>G</span>
-                        <span class='nav-letter'>i</span>
-                        <span class='nav-letter'>b</span>
-                        <span class='nav-letter'>s</span>
-                        <span class='nav-letter'>o</span>
-                        <span class='nav-letter'>n</span>
-                    </div>
-                    </div>
-                    <div class='intro'>Front-End Web Developer</div>
+                    <div class='intro'>Web Developer</div>
                 </div>
             </div>
             <div id='nav-items-container' className='nav-container' ref={navItems}>
-                    <div class='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
-                    <div class='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
-                    <div class='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
+                <div className='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
+                <div className='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
+                <div className='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
             </div>
             
             <Particles id='particles' init={particlesInit} options={{
