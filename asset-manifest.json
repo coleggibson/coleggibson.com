@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e45f1bbd.css",
+    "main.js": "/static/js/main.cff59b46.js",
+    "static/js/787.2d6a95ee.chunk.js": "/static/js/787.2d6a95ee.chunk.js",
+    "static/media/starry.jpg": "/static/media/starry.d9807e6a516e10c63675.jpg",
+    "static/media/memoryscreenshot.png": "/static/media/memoryscreenshot.21c000273759d29548f9.png",
+    "static/media/gmail.png": "/static/media/gmail.272d231e162338e9f52d.png",
+    "static/media/gameboy.jpg": "/static/media/gameboy.30d87ed316e4e07869d9.jpg",
+    "static/media/sega.jpg": "/static/media/sega.0d187eb15391164690fb.jpg",
+    "static/media/ps5.jpg": "/static/media/ps5.bb681844924a09d84c17.jpg",
+    "static/media/nintendods.jpg": "/static/media/nintendods.91e4b434c4e92cecc84a.jpg",
+    "static/media/xbox.jpg": "/static/media/xbox.fad468a8b5747d4d4ded.jpg",
+    "static/media/gamecube.jpg": "/static/media/gamecube.3408c1e8858a6c0da9e8.jpg",
+    "static/media/switch.jpg": "/static/media/switch.69e13c0fbe0bf79cb5e4.jpg",
+    "static/media/nes.jpg": "/static/media/nes.ea24053b5ed95e478881.jpg",
+    "static/media/playstation.jpg": "/static/media/playstation.0fcc16dbbdf9c5700d8e.jpg",
+    "index.html": "/index.html",
+    "main.e45f1bbd.css.map": "/static/css/main.e45f1bbd.css.map",
+    "main.cff59b46.js.map": "/static/js/main.cff59b46.js.map",
+    "787.2d6a95ee.chunk.js.map": "/static/js/787.2d6a95ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e45f1bbd.css",
+    "static/js/main.cff59b46.js"
+  ]
+}
