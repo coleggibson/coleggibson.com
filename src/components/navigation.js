@@ -8,6 +8,7 @@ import {loadPolygonMaskPlugin} from "tsparticles-plugin-polygon-mask"
 
 
 
+
 const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) => {
     
     loadPolygonMaskPlugin(tsParticles)
@@ -16,11 +17,10 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
         await loadFull(main)
     }
     const scrollDown = (ref) => {
-        window.scrollTo({
-            top: ref.current.offsetTop,
-            behavior:'smooth'
-        })
-    }
+        if (ref && ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+        }
    
     return (
         <div id='nav-main-container'>
