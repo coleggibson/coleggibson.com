@@ -3,7 +3,7 @@ import {loadFull} from 'tsparticles'
 import '../style/navigation.css'
 import {tsParticles} from "tsparticles-engine"
 import {loadPolygonMaskPlugin} from "tsparticles-plugin-polygon-mask"
-import { starry } from '../images'
+
 
 
 
@@ -60,7 +60,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                 },
                 "particles": {
                     "number": {
-                        "value": 200,
+                        "value": 100,
                         "density": {
                             "enable": false,
                             "value_area": 300
@@ -175,30 +175,12 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                 "retina_detect": true,
                 "background": {
                     "color": "#0A1828",
-                    "image": {
-                        'src': {starry},
-                    },
+                    "image": "",
                     "position": "50% 50%",
                     "repeat": "no-repeat",
                     "size": "cover"
                 },
-                // 'polygon': {
-                //     'draw': {
-                //       'enable': true,
-                //       'lineColor': "#f0f8ff",
-                //       'lineWidth': 0.3
-                //     },
-                //     'move': {
-                //       'radius': 9
-                //     },
-                //     'inline': {
-                //     'arrangement': "equidistant",
-                //     },
-                //     'scale': 0.5,
-                //     'type': "inline",
-                //     'url': "https://particles.js.org/images/smalldeer.svg"
-                //   },
-            }}
+             }}
             />
         </div>
     )

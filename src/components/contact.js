@@ -4,22 +4,27 @@ import {
     LinkedIn
 } from '../images'
 import '../style/contact.css'
+import {Link} from "react-router-dom"
+
 const Contact= ({contactSection}) => {
     return (
         <div id='contact-section' ref={contactSection}>
-            <div className='section-header'>Contact</div>
             <div id='contact-container'>
             <div className='contact-item'>
             <div>coleggibson@gmail.com</div>
             <img id='gmail' src={Gmail} className='contact-img' alt='gmail'/>
             </div>
+            <div className='contact-container-bottom'>
             <div className='contact-item'>
-            <div>github</div>
+            <a href="https://github.com/coleggibson" target="_blank">
             <img src={GitHub} className='contact-img' alt='github'/>
+            </a>
             </div>
             <div className='contact-item'>
-            <div>linkedin</div>
+            <a href="https://www.linkedin.com/in/colemanggibson/" target="_blank">
             <img src={LinkedIn} className='contact-img' alt='linkedin'/>
+            </a>
+            </div>
             </div>
             {/* <div className='contact-item'>
             <div>resume</div>

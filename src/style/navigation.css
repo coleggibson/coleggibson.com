@@ -7,7 +7,6 @@
 }
 
 .intro {
-    /* font-size: 90px ; */
     color: #BFA181;
     font-weight: 100;
 }
@@ -18,7 +17,6 @@
     padding-bottom: 200px;
     position:absolute;
     color: #f0f8ff;
-    /* width: 100%; */
 }
 
 .nav-container {
@@ -73,6 +71,11 @@
     transition: 1s;
     text-decoration: underline;
     cursor:pointer
+}
+
+.nav-item-hidden {
+    transition: 1;
+    display: none;
 }
 
 #particles {

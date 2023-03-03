@@ -16,16 +16,20 @@ const Projects = ({projectsSection}) => {
                 <div id='memory-card-content'> 
                     <img src={Memorycardpic} alt='memorycard-screenshot'/>
                     <div class='project-buttons'>
-                        <button class='button'>View Code</button>
-                    <Link to="memorycard">
-                        <button class='button'>View Demo</button>
-                    </Link>
+                    <a href="https://github.com/coleggibson/memorycard/" target="_blank">
+                    <button class='button'>View Code</button>
+                    </a>
+                    <a href="https://coleggibson.github.io/memorycard/" target="_blank">
+                    <button class='button'>View Demo</button>
+                    </a>
                     </div>
                 </div>
                 <div class='memory-card-content'> 
                     <img src={Memorycardpic} alt='memorycard-screenshot'/>
                     <div class='project-buttons'>
-                        <button class='button'>View Code</button>
+                    <a href="https://github.com/coleggibson/coleggibson.github.io" target="_blank">
+                    <button class='button'>View Demo</button>
+                    </a>
                     <Link to="memorycard">
                         <button class='button'>View Demo</button>
                     </Link>
