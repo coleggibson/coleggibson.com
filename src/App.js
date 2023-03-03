@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Navigation from './components/navigation';
 import Home from './pages';
-import Memorycard from './pages/memorycard';
+
 
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
   <Router>
   <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route path='/memorycard' element={<Memorycard/>} />
   </Routes>
   </Router>
 );
