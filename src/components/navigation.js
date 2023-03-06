@@ -32,7 +32,7 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                             <span className='nav-letter'>C</span>
                             <span className='nav-letter'>o</span>
                             <span className='nav-letter'>l</span>
-                            <span className='nav-letter'>e</span>
+                            <span className='nav-letter'>e&nbsp;</span>
                         </div>
                         <div className='letter-container-last'>
                             <span className='nav-letter'>G</span>

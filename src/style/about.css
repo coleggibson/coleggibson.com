@@ -29,7 +29,7 @@
 
 p {
     padding: 30px;
-    font-size: 20px;
+    /* font-size: 20px; */
     color:rgb(235, 204, 125);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

@@ -31,7 +31,6 @@
     align-items:space-between;
     flex-direction: column;
     height: 200px;
-    font-size: x-large;
     font-weight: 900;
     position:fixed;
     right: 0;
@@ -87,9 +86,6 @@
     display: flex;
 }
 
-.letter-container {
-    width:150px
-}
 
 .nav-letter {
     display:inline-block;
@@ -110,7 +106,7 @@
 
 
 #name-container {
-    font-size: 70px;
+    /* font-size: 70px; */
     display: flex;
     flex-direction: column;
     justify-items: center;
