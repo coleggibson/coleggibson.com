@@ -14,7 +14,7 @@
 #nav-content-container{
     display: flex;
     justify-content: center;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     position:absolute;
     color: #f0f8ff;
 }
@@ -106,7 +106,6 @@
 
 
 #name-container {
-    /* font-size: 70px; */
     display: flex;
     flex-direction: column;
     justify-items: center;

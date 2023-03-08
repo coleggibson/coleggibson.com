@@ -55,7 +55,7 @@ body {
 }
 
 @media screen and (max-width:1366px) {
-    .section-header{
+    .section-header, .project-item-description{
         font-size: 3vw;
     }
     #name-container {
@@ -65,7 +65,7 @@ body {
         font-size:3vw;
     }
     p{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     #projects-container{
         width: 100vw;
@@ -79,11 +79,11 @@ body {
 }
 
 @media screen and (max-width:1024px) {
-    .section-header{
+    .section-header, .project-item-description{
         font-size: 3vw;
     }
     #name-container {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     #nav-items-container {
         font-size:3vw;
@@ -103,11 +103,11 @@ body {
 }
 
 @media screen and (max-width:786px) {
-    .section-header{
+    .section-header, .project-item-description{
         font-size: 3vw;
     }
     #name-container {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     #nav-items-container {
         font-size:3vw;
@@ -127,11 +127,11 @@ body {
 }
 
 @media screen and (max-width:480px) {
-    .section-header{
+    .section-header, .project-item-description{
         font-size: 3vw;
     }
     #name-container {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     #nav-items-container {
         font-size:3vw;
