@@ -51,8 +51,7 @@
     display: flex;
     margin-bottom: 20px;
     background-color: #0A1828;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 30px;
     text-align: center;
 }
 .project-image {

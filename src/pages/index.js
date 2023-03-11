@@ -50,10 +50,9 @@ const fadeRightProj = (ref) => {
 }
 
 
-window.onscroll = function () {fadeRight(aboutSection); shrinkNav(navItems); fadeRightProj(projectsSection)}
+window.onscroll = function () {fadeRight(aboutSection); fadeRightProj(projectsSection)}
 
 const particlesInit = async (main) => {
-  console.log(main)
   await loadFull(main)
 }
 
@@ -192,17 +191,15 @@ const options =
 
     return (
         <div className="App">
-          <header className="App-header">
-          </header>
           <Navigation aboutSection = {aboutSection}
           projectsSection = {projectsSection} contactSection={contactSection}
           navItems = {navItems} shrinkNav = {shrinkNav}/>
-          <body id='main-body'>
+          <div id='main-body'>
           <Particles id='body-particles' init={particlesInit} options={options}/>
-          <About aboutSection = {aboutSection}/>
+          <About aboutSection = {aboutSection} contactSection={contactSection}/>
           <Projects projectsSection = {projectsSection}/>
           <Contact contactSection={contactSection}/>
-          </body>
+          </div>
           {/* <Footer/> */}
         </div>
       );

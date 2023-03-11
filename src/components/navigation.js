@@ -13,7 +13,6 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
     
     loadPolygonMaskPlugin(tsParticles)
     const particlesInit = async (main) => {
-        console.log(main)
         await loadFull(main)
     }
     const scrollDown = (ref) => {
@@ -43,14 +42,14 @@ const Navigation = ({aboutSection, projectsSection, contactSection, navItems}) =
                             <span className='nav-letter'>n</span>
                         </div>
                     </div>
-                    <div class='intro'>Web Developer</div>
+                    <div className='intro'>Web Developer</div>
                 </div>
             </div>
-            <div id='nav-items-container' className='nav-container' ref={navItems}>
+            {/* <div id='nav-items-container' className='nav-container' ref={navItems}>
                 <div className='nav-item' onClick={() => scrollDown(aboutSection)} >About Me </div>
                 <div className='nav-item' onClick={() => scrollDown(projectsSection)}>Projects</div>
                 <div className='nav-item' onClick={() => scrollDown(contactSection)}>Contact</div>
-            </div>
+            </div> */}
             
             <Particles id='particles' init={particlesInit} options={{
                  
