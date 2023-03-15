@@ -1,5 +1,5 @@
 import '../style/projects.css'
-import { LIClone, Memorycardpic, Portfolio } from "../images"
+import { LIClone, Memorycardpic, Portfolio, recipePage } from "../images"
 
 
 const Projects = ({projectsSection, topFunction}) => {   
@@ -15,53 +15,71 @@ const Projects = ({projectsSection, topFunction}) => {
             <div id='projects-container'>
                 {/* <div id='slideshow-container'></div> */}
                 <div className='project-item'> 
-                <div className="project-item-title">API Recipe Search (Currently Building)</div>
-                <div className='project-item-description'>Using <a href='spoonacular.com'>Spoonacular.com API</a></div>
-                    <img className='project-image' src={LIClone} alt='memorycard-screenshot'/>
-                    <div class='project-buttons'>
-                        <button class='button'>View Code</button>
+                    <div className='project-left-side-content'>
+                        <div className="project-item-title">API Recipe Search<br/>
+                        (Currently Building)
+                        </div>
+                        <div className='project-item-description'>A React application that uses Spoonacular.com API to search recipes by available ingredients. When you enter in your ingredients my app strings them together and injects them into the API url to search for recipes. Then for each recipe a follow up API function runs that finds the specific recipe information to include in the search results, including recipe image, name, and URL. I am currently working on adding more functionality included with the API as well as a Node JS backend to handle requests faster.</div>
+                    </div>
+                    <div className='project-right-side-content'>    
+                        <img className='project-image' src={recipePage} alt='recipe-screenshot'/>
+                        <div className='project-buttons'>
+                            <a href="https://github.com/coleggibson/recipeme" target="_blank">
+                                <button className='button'>View Code</button>
+                            </a>
+                            <a href="https://coleggibson.github.io/recipeme" target="_blank">
+                                <button className='button'>Live Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className='project-item'> 
+                <div className='project-left-side-content'>
+                    <div className="project-item-title">LinkedIn Front Page</div>
+                    <div className='project-item-description'>This is a recreation of the website we all know and love (sometimes), LinkedIn. It was created with React JS, Jekyll, and hosted on GitHub Pages.  I have grown to be a fan of the grid layout and had the opportunity to be able to flex those skills on this project for the overall body layout. This page is also friendly and adjustable for devices on smaller screens. I also recreated the top left search function that grays out the page on click.</div>
+                </div>
+                <div className='project-right-side-content'>    
+                    <img className='project-image' src={LIClone} alt='LI-screenshot'/>
+                    <div className='project-buttons'>
                         <a href="https://github.com/coleggibson/li-remade" target="_blank">
+                            <button className='button'>View Code</button>                       
                         </a>
                         <a href="https://coleggibson.github.io/li-remade/" target="_blank">
-                        <button class='button'>Live Demo</button>
-                    </a>
-                    </div>
-                </div>
-                <div className='project-item'> 
-                <div className="project-item-title">LinkedIn Front Page</div>
-                <div className='project-item-description'>This is a recreation of the website we all know and love (sometimes), LinkedIn. It was created with React JS, Jekyll, and hosted on GitHub Pages.  I have grown to be a fan of the grid layout and had the opportunity to be able to flex those skills on this project for the overall body layout. This page is also friendly and adjustable for devices on smaller screens. I also recreated the top left search function that grays out the page on click.</div>
-                    <img className='project-image' src={LIClone} alt='memorycard-screenshot'/>
-                    <div className='project-buttons'>
-                        <button className='button'>View Code</button>
-                        <a href="https://github.com/coleggibson/li-remade" target="_blank">
+                            <button className='button'>Live Demo</button>
                         </a>
-                        <a href="https://coleggibson.github.io/li-remade/" target="_blank">
-                        <button className='button'>Live Demo</button>
-                    </a>
                     </div>
                 </div>
-                <div className='project-item'> 
-                    <div className="project-item-title">Console Memory Game</div>
-                    <div className='project-item-description'>A memory game with a simple goal, don't pick the same card twice! Created with React JS, Jekyll and hosted on GitHub Pages. To start this project I searched through shutterstock for high quality free images of consoles to use, then created an array to store the images. For the final result I mapped through the array to display and created a randomizing algorithm to change the order on click.</div>
-                    <img className='project-image' src={Memorycardpic} alt='memorycard-screenshot'/>
-                    <div className='project-buttons'>
-                    <a href="https://github.com/coleggibson/memorycard/" target="_blank">
-                    <button className='button'>View Code</button>
-                    </a>
-                    <a href="https://coleggibson.github.io/memorycard/" target="_blank">
-                    <button className='button'>Live Demo</button>
-                    </a>
+                </div>
+                <div className='project-item'>
+                    <div className='project-left-side-content'> 
+                        <div className="project-item-title">Console Memory Game</div>
+                        <div className='project-item-description'>A memory game with a simple goal, don't pick the same card twice! Created with React JS, Jekyll and hosted on GitHub Pages. To start this project I searched through shutterstock for high quality free images of consoles to use, then created an array to store the images. For the final result I mapped through the array to display and created a randomizing algorithm to change the order on click.</div>
+                    </div>
+                    <div className='project-right-side-content'>    
+                        <img className='project-image' src={Memorycardpic} alt='memorycard-screenshot'/>
+                        <div className='project-buttons'>
+                            <a href="https://github.com/coleggibson/memorycard/" target="_blank">
+                                <button className='button'>View Code</button>
+                            </a>
+                            <a href="https://coleggibson.github.io/memorycard/" target="_blank">
+                                <button className='button'>Live Demo</button>
+                            </a>
                     </div>
                 </div>
+                </div>
                 <div className='project-item'> 
-                <div className="project-item-title">Porfolio Website</div>
-                <div className='project-item-description'>I built and designed this website with love. Created with React JS, Jekyll and hosted on GitHub pages. The floating particles are TS Particles. Website is mobile friendly.</div>
-                    <img className='project-image' src={Portfolio} alt='memorycard-screenshot'/>
-                    <div className='project-buttons'>
-                    <a href="https://github.com/coleggibson/coleggibson.github.io" target="_blank">
-                    <button className='button'>Live Demo</button>
-                    </a>
-                    <button className='button' onClick={() => topFunction()}>View Demo</button>
+                    <div className='project-left-side-content'>
+                        <div className="project-item-title">Porfolio Website</div>
+                        <div className='project-item-description'>I built and designed this website with love. Created with React JS, Jekyll and hosted on GitHub pages. The floating particles are TS Particles. Website is mobile friendly.</div>
+                    </div>
+                    <div className='project-right-side-content'>    
+                        <img className='project-image' src={Portfolio} alt='portfolio-screenshot'/>
+                        <div className='project-buttons'>
+                            <a href="https://github.com/coleggibson/coleggibson.github.io" target="_blank">
+                                <button className='button'>View Code</button>
+                            </a>
+                            <button className='button' onClick={() => topFunction()}>Live Demo</button>
+                        </div>
                     </div>
                 </div>
             </div>

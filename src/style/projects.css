@@ -16,6 +16,7 @@
 }
 
 .project-item-title {
+    text-align: center;
     margin-bottom: 30px;
     font-size: large;
     background-color: #0A1828;
@@ -41,17 +42,27 @@
     margin-top: 50px;
     max-width: 900px;
     display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.project-left-side-content, .project-right-side-content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .project-item-description {
     display: flex;
     margin-bottom: 20px;
     background-color: #0A1828;
     padding: 30px;
-    text-align: center;
+    text-align: left;
 }
 .project-image {
     border-radius: 10px;

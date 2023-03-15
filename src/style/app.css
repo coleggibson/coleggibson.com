@@ -92,6 +92,9 @@ body {
         width: 25vw;
         height: 30vh;
     }
+    .project-right-side-content {
+        margin-top: 60px;
+    }
 }
 
 @media only screen and (min-width:1025px) and (max-width:1200px){
@@ -122,8 +125,8 @@ body {
 }
 
 @media only screen and (min-width:769px) and (max-width:1024px) {
-    .section-header{
-        font-size: 3vw;
+    .section-header, .project-item-description{
+        font-size: 4vw;
     }
     #name-container {
         font-size: 3vw;
@@ -132,7 +135,7 @@ body {
         font-size:3vw;
     }
     p, .project-item-description{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     #projects-container{
         width: 100vw;
@@ -143,7 +146,7 @@ body {
     }
     .project-image {
         width: 50vw;
-        height: 30vh;
+        height: 20vh;
     }
     #about-content-container {
         display: flex;
@@ -155,9 +158,21 @@ body {
     #about-content {
         padding: 20px;
     }
-
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
     #right-side-content {
         margin-bottom: 90px;
+    }
+    .project-right-side-content {
+        margin-top: 60px;
+    }
+    .project-item-title {
+        font-size: 3vw;
     }
 }
 
@@ -172,7 +187,7 @@ body {
         font-size:2vw;
     }
     p, .project-item-description{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .project-item-description{
@@ -204,6 +219,17 @@ body {
     #about-content {
         padding: 10px;
     }
+
+    .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    }
+    .project-right-side-content {
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (min-width:300px)and (max-width:480px) {
@@ -217,7 +243,7 @@ body {
         font-size:3vw;
     }
     p, .project-item-description{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     #projects-container{
         width: 100vw;
@@ -225,8 +251,8 @@ body {
     }
 
     .project-image {
-        width: 60vw;
-        height: 20vh;
+        width: 50vw;
+        height: 15vh;
     }
 
     #about-content-container {
@@ -242,5 +268,16 @@ body {
     }
     #about-content {
         padding: 10px;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .project-right-side-content {
+        margin-top: 0px;
     }
 }
