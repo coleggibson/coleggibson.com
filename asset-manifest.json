@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3cb8489.css",
-    "main.js": "/static/js/main.6bf0fa0e.js",
+    "main.css": "/static/css/main.fdc040fb.css",
+    "main.js": "/static/js/main.9d048d75.js",
     "static/js/787.2d6a95ee.chunk.js": "/static/js/787.2d6a95ee.chunk.js",
     "static/media/starry.jpg": "/static/media/starry.d9807e6a516e10c63675.jpg",
+    "static/media/recipeme.png": "/static/media/recipeme.6f84c07cea55296e06c0.png",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/li-clone.png": "/static/media/li-clone.76c2f64f9f3cf450ef08.png",
@@ -12,12 +13,12 @@
     "static/media/headshot.jpg": "/static/media/headshot.9f49d4ffcf12d9db7e35.jpg",
     "static/media/portfolio.png": "/static/media/portfolio.43bdb1b93bf67be0d5fd.png",
     "index.html": "/index.html",
-    "main.f3cb8489.css.map": "/static/css/main.f3cb8489.css.map",
-    "main.6bf0fa0e.js.map": "/static/js/main.6bf0fa0e.js.map",
+    "main.fdc040fb.css.map": "/static/css/main.fdc040fb.css.map",
+    "main.9d048d75.js.map": "/static/js/main.9d048d75.js.map",
     "787.2d6a95ee.chunk.js.map": "/static/js/787.2d6a95ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3cb8489.css",
-    "static/js/main.6bf0fa0e.js"
+    "static/css/main.fdc040fb.css",
+    "static/js/main.9d048d75.js"
   ]
 }
