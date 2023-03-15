@@ -18,7 +18,7 @@ const About = ({aboutSection, contactSection}) => {
             <img id='headshot' src={headshot}/>
             <div id='right-side-content'>
                 <p id='about-content'>
-                    Front-End Developer based out of Nashville, TN with a lifelong passion for technology. Lifelong student with a growing library of development tools including React, JS, HTML5, and CSS. Background in project management and able to work out a solution to any complex problem. When I'm not coding you can find me at the local arcade or at nearest festival with Tame Impala.
+                    Front-End Developer based out of Nashville, TN with a lifelong passion for technology. Fluent in React, JS, HTML5, and CSS. Background in project management and able to work out a solution to any complex problem. When I'm not coding you can find me at the local arcade or at the nearest festival with Tame Impala.
                 </p>
             <button id='contact-button' onClick={() => scrollDown(contactSection)}>Let's build something together!</button>
             </div>
