@@ -5,12 +5,7 @@
     
 }
 
-#headshot {
-    padding: 30px;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-}
+
 
 #about-title{
     border-radius: 10px;
@@ -40,7 +35,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     
 }
 
