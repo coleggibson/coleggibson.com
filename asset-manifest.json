@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.faaf24bf.css",
-    "main.js": "/static/js/main.4daf6229.js",
+    "main.css": "/static/css/main.92715ade.css",
+    "main.js": "/static/js/main.47cd7d0d.js",
     "static/js/787.2d6a95ee.chunk.js": "/static/js/787.2d6a95ee.chunk.js",
     "static/media/starry.jpg": "/static/media/starry.d9807e6a516e10c63675.jpg",
     "static/media/recipeme.png": "/static/media/recipeme.6f84c07cea55296e06c0.png",
+    "static/media/li-clone.png": "/static/media/li-clone.c2c0426e733595519ab0.png",
+    "static/media/memorycard.png": "/static/media/memorycard.6f22bbaa6b61dd70fad8.png",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
-    "static/media/li-clone.png": "/static/media/li-clone.76c2f64f9f3cf450ef08.png",
     "static/media/gmail.png": "/static/media/gmail.272d231e162338e9f52d.png",
-    "static/media/memorycard.png": "/static/media/memorycard.d0a3675c8933ff19f3c2.png",
     "static/media/headshot.jpg": "/static/media/headshot.9f49d4ffcf12d9db7e35.jpg",
-    "static/media/portfolio.png": "/static/media/portfolio.43bdb1b93bf67be0d5fd.png",
+    "static/media/portfolio.png": "/static/media/portfolio.c7f8535b5e49f365f05f.png",
     "index.html": "/index.html",
-    "main.faaf24bf.css.map": "/static/css/main.faaf24bf.css.map",
-    "main.4daf6229.js.map": "/static/js/main.4daf6229.js.map",
+    "main.92715ade.css.map": "/static/css/main.92715ade.css.map",
+    "main.47cd7d0d.js.map": "/static/js/main.47cd7d0d.js.map",
     "787.2d6a95ee.chunk.js.map": "/static/js/787.2d6a95ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.faaf24bf.css",
-    "static/js/main.4daf6229.js"
+    "static/css/main.92715ade.css",
+    "static/js/main.47cd7d0d.js"
   ]
 }
