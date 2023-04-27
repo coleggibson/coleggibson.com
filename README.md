@@ -7,7 +7,7 @@
 * [Setup](#setup)
 
 ## Description
-Website created to showcase front-end development projects and functionality.
+Website created to showcase development projects with links to projects and live demos.
 
 ## Technologies
 * React JS
