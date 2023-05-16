@@ -16,9 +16,7 @@ const Projects = ({projectsSection, topFunction}) => {
                 {/* <div id='slideshow-container'></div> */}
                 <div className='project-item'> 
                     <div className='project-left-side-content'>
-                        <div className="project-item-title">API Recipe Search<br/>
-                        (Currently Building)
-                        </div>
+                        <div className="project-item-title">API Recipe Search             </div>
                         <div className='project-item-description'>A React application that uses Spoonacular.com API to search recipes by available ingredients. When you enter in your ingredients my app strings them together and injects them into the API url to search for recipes. Then for each recipe a follow up API function runs that finds the specific recipe information to include in the search results, including recipe image, name, and URL. I am currently working on adding more functionality included with the API as well as a Node JS backend to handle requests faster.</div>
                     </div>
                     <div className='project-right-side-content'>    

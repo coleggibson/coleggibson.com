@@ -1,6 +1,5 @@
 import React from 'react'
 import About from '../components/about'
-import Footer from '../components/footer'
 import Projects from '../components/projects'
 import Navigation from '../components/navigation'
 import Contact from '../components/contact'
