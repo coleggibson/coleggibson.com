@@ -1,4 +1,4 @@
-# RecipeMe - Portfolio Website
+# Portfolio Website
 
 ## Table of contents
 
